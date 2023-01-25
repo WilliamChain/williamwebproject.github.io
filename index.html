@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=devive-width, initial-scale=1">
+        <title>Food House</title>
+        <link rel="stylesheet" href="stylefood.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Raleway:wght@100&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+    </head>
+    <body>
+        <section class="header">
+            <img src="images/d2logo.jfif" class="logo">
+            <div class="header-text">
+                <h1>Food House</h1>
+                <p>Your taste – our passion!</p>
+                <div class="header-btn">
+                    <a href="#"><span></span>Happy Meal</a>
+                    <a href="#"><span></span>Happy Life</a>
+                </div>
+            </div>
+        </section>
+        <div id="sideNav">
+            <nav>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#tacos">Tacos</a></li>
+                    <li><a href="#bbq">BBQ</a></li>
+                    <li><a href="#salad">Salad</a></li> 
+                    <li><a href="#footer">Order Now</a></li>  
+                </ul>
+            </nav>
+
+        </div>
+        <div id="menuBtn">
+            <img src="images/menulogo.jpg" id="menu">
+        </div>
+
+        <!--TACOS-->
+
+        <section id="tacos">
+            <div class="title-text">
+                <p>Tacos</p>
+            <h1>The Best Taste In Myanmar</h1>
+            </div>
+            <div class="tacos-box">
+                <div class="tacosletter">
+                    <h1>Tasty Tender Tacos</h1>
+                    <div class="tacos-desc">
+                        <div class="tacos-icon">
+                            
+                        </div>
+                        <div class="tacos-text"></div>
+                          
+                    </div>
+                </div>
+                <div class="tacos-img">
+                    <img src="images/tacos2.jpg">
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <!--BBQ-->
+
+        <section id="bbq">
+            <div class="title-text">
+                <p>BBQ</p>
+            <h1>Have you tried our special menu?</h1>
+            </div>
+            <div class="bbq-box">
+                <div class="bbq-service">
+                    <img src="images/bbq1.jfif">
+                    <div class="overlay"></div>
+                </div>
+                <div class="bbq-service">
+                    <img src="images/bbq2.jfif">
+                    <div class="overlay"></div>
+                </div>
+                <div class="bbq-service">
+                    <img src="images/bbq3.jfif">
+                    <div class="overlay"></div>
+                </div>
+                <div class="bbq-service">
+                    <img src="images/bbq4.jfif">
+                    <div class="overlay"></div>
+                </div>
+            </div>
+        </section>
+
+        <!--Salad-->
+
+        <section id="salad">
+            <div class="title-text">
+                <p>Salad</p>
+            <h1>Healhy food taste better</h1>
+            </div>
+            <div class="salad-row">
+                <div class="salad-col">
+                <div class="user">
+                    <img src="images/salad1.jpg">
+                </div>                
+                    <p>Shrimp Salad</p></div>
+                    
+                <div class="salad-col"><p>Macaroni Salad</p>
+                    <img src="images/salad2.jfif"></div>
+
+                <div class="salad-col"><p>Vegetable Salad</p>
+                    <img src="images/salad3.jfif"></div>
+            </div>
+        </section>
+
+        <!--footer-->
+
+        <section id="footer">
+        <div class="title-text">
+            <p>CONTACT</p>
+        <h1>Order your favourite food now !</h1>
+        </div> 
+        <div class="footer-row">
+            <div class="footer-left"><h1>Opening Hours</h1><p>Monday to Friday - 9 AM to 7 PM</p>
+                <p>Saturday & Sunday - 8 AM to 8 PM</p></div>
+            <div class="footer-right"><h1>Get In Touch</h1>
+                <p>Ground Floor, Junction City, Yangon</i></p>
+                <p>AKHFoodHouse@gmail.com</p>
+                <p>+01520720/+959376595628</p>
+            </div>
+        </div>
+        </section>
+        <script>
+            var menuBtn = document.getElementById("menuBtn")
+            var sideNav = document.getElementById("sideNav")
+            var menu = document.getElementById("menu")
+
+            sideNav.style.right="-250px";
+
+            menuBtn.onclick=function(){
+                if(sideNav.style.right=="-250px"){
+                    sideNav.style.right="0";
+                }
+                else{
+                    sideNav.style.right="-250px";
+                }
+            }
+            var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
+        </script>
+
+    </body>
+</html>
